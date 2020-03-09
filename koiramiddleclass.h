@@ -8,7 +8,7 @@ class KoiraMiddleClass : public NisakasBaseClass
 {
 public:
 	KoiraMiddleClass();
-	void fun() { std::cout << "fun() called"; }
+	void fun() override;
 };
 
 #endif // KOIRAMIDDLECLASS_H
