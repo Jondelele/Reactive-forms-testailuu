@@ -7,12 +7,13 @@
 class NisakasBaseClass
 {
 public:
-	NisakasBaseClass();
-	virtual void aantele() = 0;
+//	NisakasBaseClass();
+//	virtual void aantele() = 0;
+	virtual void fun() = 0;
 
 private:
 	int ika;
-	std::string rotu;
+	std::string laji;
 };
 
 #endif // NISAKAS_H
