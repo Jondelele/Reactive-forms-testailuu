@@ -5,8 +5,10 @@ CONFIG -= qt
 
 SOURCES += \
         koiramiddleclass.cpp \
-        main.cpp
+        main.cpp \
+        puudelisubclass.cpp
 
 HEADERS += \
     koiramiddleclass.h \
-    nisakasbaseclass.h
+    nisakasbaseclass.h \
+    puudelisubclass.h
