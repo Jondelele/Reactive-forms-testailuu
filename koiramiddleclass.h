@@ -4,12 +4,12 @@
 #include "nisakasbaseclass.h"
 #include <iostream>
 
-class KoiraMiddleClass : public NisakasBaseClass
+class KoiraMiddleClass
 {
 public:
 	KoiraMiddleClass();
-	void aantele() override;
-//	virtual void aanteleVirtual() override;
+	void aantele();
+	virtual void aanteleVIRTUAL();
 
 };
 

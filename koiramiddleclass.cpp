@@ -9,3 +9,8 @@ void KoiraMiddleClass::aantele()
 {
 	std::cout << "Hau hau hau hau haukuntaa!!!!!" << std::endl;
 }
+
+void KoiraMiddleClass::aanteleVIRTUAL()
+{
+	std::cout << "VIRTUALHau hau hau hau haukuntaa!!!!!VIRTUAL" << std::endl;
+}
