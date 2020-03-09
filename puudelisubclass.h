@@ -7,6 +7,7 @@ class PuudeliSubClass : public KoiraMiddleClass
 {
 public:
 	PuudeliSubClass();
+	void aantele() override;
 };
 
 #endif // PUUDELISUBCLASS_H
