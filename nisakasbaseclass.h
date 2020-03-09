@@ -9,7 +9,7 @@ class NisakasBaseClass
 public:
 //	NisakasBaseClass();
 //	virtual void aantele() = 0;
-	virtual void fun() = 0;
+	virtual void aantele() = 0;
 
 private:
 	int ika;

@@ -8,7 +8,7 @@ class KoiraMiddleClass : public NisakasBaseClass
 {
 public:
 	KoiraMiddleClass();
-	void fun() override;
+	void aantele() override;
 };
 
 #endif // KOIRAMIDDLECLASS_H

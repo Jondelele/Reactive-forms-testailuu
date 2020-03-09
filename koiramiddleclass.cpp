@@ -5,7 +5,7 @@ KoiraMiddleClass::KoiraMiddleClass()
 
 }
 
-void KoiraMiddleClass::fun()
+void KoiraMiddleClass::aantele()
 {
-	std::cout << "fun() called" << std::endl;
+	std::cout << "Hau hau hau hau haukuntaa!!!!!" << std::endl;
 }
