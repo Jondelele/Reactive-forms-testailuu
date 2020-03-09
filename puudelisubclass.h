@@ -8,7 +8,9 @@ class PuudeliSubClass : public KoiraMiddleClass
 public:
 	PuudeliSubClass();
 	void aantele();
-	void aanteleVIRTUAL();
+	// virtual avainsanan toistaminen tässä aliliokassa ei
+	// pakollista, mutta hyvän ohjelmointityylin mukaista
+	virtual void aanteleVIRTUAL();
 };
 
 #endif // PUUDELISUBCLASS_H

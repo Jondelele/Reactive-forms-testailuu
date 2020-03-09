@@ -15,7 +15,21 @@ int main()
 	PuudeliSubClass puudeliOlio;
 	koiraPointteri = &puudeliOlio;
 
+	// Tulostaa: VIRTUALHau hau hau hau haukuntaa!!!!!VIRTUAL
+	// Koska vaikka metodi onkin virtuaalinen, niin etuosalla
+	// KoiraMiddleClass:: kyetään määrittelemään että halutaan
+	// kutsua kanta/koira luokan metodia
+	koiraPointteri->KoiraMiddleClass::aanteleVIRTUAL();
+
+	// Tulostaa: VIRTUALViu viu viu puudelihaukuntaa!!!!!VIRTUAL
+	// Koska metodi ON VIRTUAALINEN ja kantaluokka olion päässä
+	// on ali/puudeli luokan olio
 	koiraPointteri->aanteleVIRTUAL();
+
+	// Tulostaa: Hau hau hau hau haukuntaa!!!!!
+	// Koska funktio ei ole virtuaalinen eli kutsuttava
+	// metodi sidotaan kantaluokan metodiin käännösvaiheessa,
+	// koska kyseessä on kanta/koira luokan pointteri
 	koiraPointteri->aantele();
 
 //	cout << "Pointer**********************************************************" << endl;
