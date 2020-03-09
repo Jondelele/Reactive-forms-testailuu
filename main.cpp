@@ -11,15 +11,17 @@ int main()
 	// olion paikalla, joten sille kutsutaan luokan Koira
 	// aantele metodia
 	cout << "Polyformismi-------------------------------------------" << endl;
-	PuudeliSubClass puudeli;
-	KoiraMiddleClass koiraOlio = puudeli;
-	koiraOlio.aantele();
+	PuudeliSubClass puudeliOlio;
+	KoiraMiddleClass* koiraPointteri;
+	koiraPointteri = &puudeliOlio;
+	koiraPointteri->aantele();
+//	Hau hau hau hau haukuntaa!!!!!
 
-	cout << "Pointer*****************************************************" << endl;
+	cout << "Pointer**********************************************************" << endl;
 	cout << "Polyformismi-------------------------------------------" << endl;
 	KoiraMiddleClass* koiraPtr = new PuudeliSubClass();
 	koiraPtr->aantele();
-
+//	Viu viu viu puudelihaukuntaa!!!!!
 
 	return 0;
 }

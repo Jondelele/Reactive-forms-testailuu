@@ -8,12 +8,11 @@ class NisakasBaseClass
 {
 public:
 //	NisakasBaseClass();
-//	virtual void aantele() = 0;
 	virtual void aantele() = 0;
 
 private:
-	int ika;
-	std::string laji;
+	int ika_;
+	std::string laji_;
 };
 
 #endif // NISAKAS_H
