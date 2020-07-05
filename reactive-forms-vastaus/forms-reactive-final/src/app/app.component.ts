@@ -1,5 +1,4 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
-import {DatePickerComponent} from '@syncfusion/ej2-angular-calendars';
+import {Component, OnInit} from '@angular/core';
 import {Form, FormArray, FormControl, FormGroup, Validators} from '@angular/forms';
 import {Observable} from 'rxjs/Observable';
 import {convertToParamMap} from '@angular/router';
@@ -11,7 +10,6 @@ import {log} from 'util';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  @ViewChild('ejDatePicker') ejDatePicker: DatePickerComponent;
   genders = ['male', 'female'];
   signupForm: FormGroup;
   forbiddenUsernames = ['Chris', 'Anna'];
@@ -28,8 +26,7 @@ export class AppComponent implements OnInit {
         'email': new FormControl(null, [Validators.required, Validators.email], this.forbiddenEmails)
       }),
       'gender': new FormControl('male'),
-      hobbies: new FormArray([]),
-      datepicker: new FormControl(null, [Validators.required])
+      hobbies: new FormArray([])
     });
 
     // this.signupForm.valueChanges.subscribe(
@@ -84,9 +81,5 @@ export class AppComponent implements OnInit {
       }, 1500);
     });
     return promise;
-  }
-
-  get datepicker() {
-    return this.signupForm.get('datepicker');
   }
 }

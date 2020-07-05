@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { DatePickerModule } from '@syncfusion/ej2-angular-calendars';
 
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -12,8 +11,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule,
-    DatePickerModule
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
