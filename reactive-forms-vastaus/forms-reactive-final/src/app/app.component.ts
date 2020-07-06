@@ -1,8 +1,10 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild } from '@angular/core';
+import { MatDatepicker } from '@angular/material/datepicker';
 import {Form, FormArray, FormControl, FormGroup, Validators} from '@angular/forms';
 import {Observable} from 'rxjs/Observable';
 import {convertToParamMap} from '@angular/router';
 import {log} from 'util';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +12,8 @@ import {log} from 'util';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+  @ViewChild('simplePicker') picker: MatDatepicker<Date>;
+
   genders = ['male', 'female'];
   signupForm: FormGroup;
   forbiddenUsernames = ['Chris', 'Anna'];
@@ -51,6 +55,10 @@ export class AppComponent implements OnInit {
       const control = new FormControl(value, Validators.required);
       (<FormArray>this.signupForm.get('hobbies')).push(control);
     });
+  }
+
+  showPicker(): void {
+    this.picker.open();
   }
 
   onSubmit() {

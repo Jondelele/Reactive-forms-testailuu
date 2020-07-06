@@ -54,7 +54,18 @@
           *ngIf="!signupForm.valid && signupForm.touched"
           class="help-block">Please enter valid data!</span>
         <button class="btn btn-primary" type="submit">Submit</button>
+
+
+
+        <mat-card>
+          <mat-form-field>
+            <input matInput [matDatepicker]="simplePicker" placeholder="Choose a date" />
+            <mat-datepicker #simplePicker></mat-datepicker>
+            <mat-datepicker-toggle matSuffix [for]="simplePicker"></mat-datepicker-toggle>
+          </mat-form-field>
+        </mat-card>
       </form>
     </div>
   </div>
+
 </div>
